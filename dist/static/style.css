@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+#my-calendar {
+  display: flex;
+  width: 538px;
+  font-size: 13px;
+  line-height: 1.54;
+  word-wrap: break-word;
+  word-break: break-word;
+  height: 366px;
+  align-items: stretch;
+}
+.calendar-left {
+  width: 385px;
+  padding: 10px;
+  border: 2px solid #57abff;
+  border-right: 0;
+}
+.holidaystyle .calendar-left {
+  border-color: #cb1c18;
+}
+.calendar-right {
+  color: #fff;
+  text-align: center;
+  flex: 1;
+  background: -webkit-gradient(linear,0 0,0 100%,from(#5af),to(#73b9ff));
+}
+.holidaystyle .calendar-right {
+  background: -webkit-gradient(linear,0 0, 0 100%, from(#cb1c18), to(#f44f23));
+}
+
+.days-head {
+  height: 34px;
+  display: flex;
+  border-bottom: 1px solid #c8cacc;
+  box-sizing: border-box;
+}
+.days-week {
+  display: block;
+  flex: 1;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+.days-week.weekend {
+  color: #e02d2d;
+}
+.days {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.rili-cell {
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+  position: relative;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+.rili-cell:hover, .rili-cell.selected {
+  border-color: #fb0;
+}
+.rili-cell.rest {
+  background: #fff0f0;
+}
+.rili-cell.work {
+  background: #f5f5f5;
+}
+.rili-cell.today {
+  background: #fb0;
+}
+.days.rows6 .rili-cell {
+  height: 45px;
+}
+.holiday-sign {
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  background: #f43;
+  text-align: left;
+  text-indent: 1px;
+  line-height: 14px;
+  overflow: hidden;
+}
+.rili-cell.other .holiday-sign {
+  opacity: 0.5;
+}
+.rili-cell.work .holiday-sign {
+  background: #969799;
+}
+.rili-number {
+  display: block;
+  height: 22px;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
+.rili-cell.weekend .rili-number {
+  color: #e02d2d;
+}
+.rili-cell.other .rili-number {
+  color: #bfbfbf;
+}
+.rili-cell.today .rili-number {
+  color: #fff;
+}
+.rili-almanac {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rili-cell.festival .rili-almanac {
+  color: #e02d2d;
+}
+.rili-cell.other .rili-almanac {
+  color: #bfbfbf;
+}
+.rili-cell.today .rili-almanac {
+  color: #fff;
+}
+.controls {
+  font-size: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #57abff;
+}
+.holidaystyle .controls {
+  border-color: #cb1c18;
+}
+.year-control {
+  width: 85px;
+  margin-right: 7px;
+}
+.controls .el-input__inner {
+  border-radius: 0;
+  padding: 0 10px;
+}
+.controls .el-input--suffix .el-input__inner {
+  padding-right: 25px;
+}
+.controls .el-input__suffix {
+  right: 2px;
+}
+.month-control {
+  width: 62px;
+  margin-left:-1px;
+  margin-right: -1px;
+}
+.holiday-control {
+  width: 90px;
+  margin-left: 7px;
+}
+.controls .el-button {
+  border-radius: 0;
+  padding: 7px 5px;
+}
+.controls .el-button.returntoday {
+  padding: 7px 15px;
+  margin-left: 7px;
+}
+.format-date {
+  height: 48px;
+  line-height: 48px;
+}
+.big-date {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  line-height: 76px;
+  font-size: 52px;
+  background: #fb0;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.1), -1px 2px 5px rgba(0,0,0,.1);
+}
+.lunar-detail {
+  margin-top: 5px;
+}
+.lunar-detail span {
+  display: block;
+}
+.almanac-detail {
+  margin: 10px auto 0;
+  width: 110px;
+  border-top: 2px solid #94c9ff;
+  padding-top: 10px;
+  line-height: 18px;
+  height: 155px;
+  display: flex;
+}
+.holidaystyle .almanac-detail {
+  border-top-color: #eb7563;
+}
+.almanac-detail i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 5px;
+  font: 24px/30px 'Microsoft Yahei';
+  text-shadow: 2px 2px 1px rgba(0,0,0,.1);
+  text-align: center;
+  color: #fff;
+}
+.almanac-detail .almanac-suit, .almanac-detail .almanac-avoid {
+  flex: 1;
+}
+.almanac-detail p {
+  margin: 0;
+  padding: 0;
+}
