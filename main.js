@@ -13,8 +13,8 @@ class CalendarApp {
 
   createWindow() {
     this.mainWin = new BrowserWindow({
-      width: 550,
-      height: 382,
+      width: 570,
+      height: 432,
       frame: false,
       show: false,
       transparent: true,
@@ -30,7 +30,7 @@ class CalendarApp {
   init() {
     this.createWindow()
     this.createTary();
-    this.mainWin.loadFile(join(__dirname, './dist/index.html'));
+    this.mainWin.loadFile(join(__dirname, './new-dist/index.html'));
     this.listen();
   }
 
