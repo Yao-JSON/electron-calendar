@@ -13,18 +13,23 @@ class CalendarApp {
 
   createWindow() {
     this.mainWin = new BrowserWindow({
-      width: 570,
-      height: 432,
+      width: 560,
+      height: 388,
       frame: false,
       show: false,
       transparent: true,
       title: '有赞万年历',
       tabbingIdentifier: '万年历',
+      hasShadow: false,
+      thickFrame: false,
+      resizable: false,
+      useContentSize: true,
+      // vibrancy: "selection"
     });
   }
   
   createTary() {
-    this.tary = new Tray(join(__dirname, './icons/calendar.jpg'));
+    this.tary = new Tray(join(__dirname, './icons/16.png'));
   }
 
   init() {
