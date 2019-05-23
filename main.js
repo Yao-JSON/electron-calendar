@@ -24,7 +24,7 @@ class CalendarApp {
   }
   
   createTary() {
-    this.tary = new Tray(join(__dirname, './icons/16.png'));
+    this.tary = new Tray(join(__dirname, './icons/calendar.jpg'));
   }
 
   init() {
