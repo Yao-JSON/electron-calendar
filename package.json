@@ -1,11 +1,11 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-calendar",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "rm -rf electron_pack/electron_packed && cross-env electron-builder --project ./"
+    "build": "electron-builder -m --x64"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [

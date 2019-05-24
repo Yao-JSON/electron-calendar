@@ -24,6 +24,7 @@ class CalendarApp {
       thickFrame: false,
       resizable: false,
       useContentSize: true,
+      icon: "./icons/512.png"
       // vibrancy: "selection"
     });
   }

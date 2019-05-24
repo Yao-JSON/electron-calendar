@@ -1,0 +1,12 @@
+version: 1.0.0
+files:
+  - url: electron-calendar-1.0.0-mac.zip
+    sha512: VFkkCVwMR345H1ZqvJI2QUK2BGD8YB9GreudDoRI2uX5U63CRybqafcTCrlT9m08m2ICna3M7R73Yn7Jjl9GmA==
+    size: 48415837
+    blockMapSize: 50491
+  - url: electron-calendar-1.0.0.dmg
+    sha512: pXe/oXAZ9iDhzX4lh7bhf7UV6XZGH1k2P0lwveAGYpvpX3omS8YYIk4v7nEc93tRSlc5H7KHgNrDQJa6jLz/5g==
+    size: 50570220
+path: electron-calendar-1.0.0-mac.zip
+sha512: VFkkCVwMR345H1ZqvJI2QUK2BGD8YB9GreudDoRI2uX5U63CRybqafcTCrlT9m08m2ICna3M7R73Yn7Jjl9GmA==
+releaseDate: '2019-05-24T02:11:57.506Z'
