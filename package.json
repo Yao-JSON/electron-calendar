@@ -19,7 +19,7 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "electron": "^2.0.0",
+    "electron": "^9.1.0",
     "electron-builder": "^20.40.2"
   }
 }
